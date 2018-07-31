@@ -67,7 +67,7 @@ $("#search").keyup(function(event){
     	/*爱心数量效果*/
         $('.activity-loves').each(function(){
             var count = parseInt($(this).attr("data-num"));
-            $(this).find('i').slice(0,count).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+            $(this).find('i').slice(0,count).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
         });
         sp();
         $(".all-area").css("display","none");
@@ -143,7 +143,7 @@ $("#search_btn").on('click',function(){
 	/*爱心数量效果*/
     $('.activity-loves').each(function(){
         var count = parseInt($(this).attr("data-num"));
-        $(this).find('i').slice(0,count).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+        $(this).find('i').slice(0,count).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
     });
     sp();
     $(".all-area").css("display","none");
@@ -216,7 +216,7 @@ function changePlace(placeId){
 	/*爱心数量效果*/
     $('.activity-loves').each(function(){
         var count = parseInt($(this).attr("data-num"));
-        $(this).find('i').slice(0,count).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+        $(this).find('i').slice(0,count).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
        
     });
   //点赞操作
@@ -294,7 +294,7 @@ function changeClassIfy(classIfy){
 	/*爱心数量效果*/
     $('.activity-loves').each(function(){
         var count = parseInt($(this).attr("data-num"));
-        $(this).find('i').slice(0,count).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+        $(this).find('i').slice(0,count).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
        
       
     });
@@ -362,7 +362,7 @@ $(function(){
     /*爱心数量效果*/
     $('.activity-loves').each(function(){
         var count = parseInt($(this).attr("data-num"));
-        $(this).find('i').slice(0,count).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+        $(this).find('i').slice(0,count).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
        
     });
   //点赞操作
@@ -396,10 +396,10 @@ function sp(){
     				return;
     			}
 				if($span.hasClass('like')){
-					$span.css({"background":"url(../htmlWeixin/img/sport.png) no-repeat left top","background-size":"22px 22px"})
+					$span.css({"background":"url(../img/sport.png) no-repeat left top","background-size":"22px 22px"})
 						.html(parseInt(data.praiseNum)).removeClass('like');
 				}else {
-					$span.css({"background":"url(../htmlWeixin/img/sport1.png) no-repeat left top","background-size":"22px 22px"})
+					$span.css({"background":"url(../img/sport1.png) no-repeat left top","background-size":"22px 22px"})
 						.html(parseInt(data.praiseNum)).addClass('like');
 				}
     		},

@@ -267,7 +267,8 @@ $(function(){
     });
     $('.yes-btn').on('click',function(){
         $('.pop-up-layer').hide();
-        $('.city-collapse').hide();
+        window.location.href = 'city-activity.html';
+        //$('.city-collapse').hide();
     });
 });
 /*上拉刷新*/
@@ -320,7 +321,7 @@ function pullupRefresh() {
 			            a.innerHTML = '<img src="'+data.activityCategorys[i].imgUrl+'" alt="item-photo">'+
 			                '<p class="item-title">'+data.activityCategorys[i].name+'</p>';
 			            table.appendChild(a);
-			        }
+				 }
 				 document.getElementById("search_btn").setAttribute("data-pageNo",data.pageNo);
 				 document.getElementById("search_btn").setAttribute("data-pageNum",data.pageNum);
 				 document.getElementById("search_btn").setAttribute("data-placeId",data.placeId);
