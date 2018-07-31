@@ -1,0 +1,148 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+}
+.activity-title{
+    line-height: 45px;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: center;
+    color: #666464;
+    padding: 0 50px;
+}
+.back-btn{
+    display: block;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    background: url("../img/pre.png") no-repeat left center;
+    background-size: 20px 20px;
+    color: #666464;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.content{
+    height: 100%;
+    padding-top: 45px;
+    overflow-y: scroll;
+    background-color: #727171;
+}
+.content-wrap{
+    padding: 15px 20px 45px;
+}
+.content-wrap>div{
+    margin-bottom: 20px;
+}
+.activity-img img{
+    width: 100%;
+    height: auto;
+}
+.item-title{
+    width: 100px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #625f5f;
+    border:solid 1px #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-detail{
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+.assess-btn{
+    display: block;
+    width: 120px;
+    margin: auto;
+    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #666464;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.assess-btn-no{
+    display: block;
+    width: 120px;
+    margin: auto;
+    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+}
+.pop-up-layer{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+}
+.assess-wrap{
+    position: fixed;
+    height: 240px;
+    width: calc(100% - 40px);
+    top:50%;
+    margin-top: -120px;
+    left: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.assess-content{
+    width: 180px;
+    margin: auto;
+    padding: 65px 0;
+}
+.activity-loves i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: url("../img/loves2.png") no-repeat center;
+    background-size: contain;
+}
+/*.activity-loves i:nth-child(n+4){
+    background: url("../img/loves2.png") no-repeat center;
+    background-size: cover;
+}*/
+.assess-tip{
+    line-height: 30px;
+    color: #c2c3c3;
+}
+.assess-btns{
+    padding-top: 10px;
+    line-height: 40px;
+}
+.assess-btns a{
+    display: block;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.assess-loves-btn{
+    color: #c2c3c3;
+    /*text-align: left;*/
+}
+.cancel-btn{
+    color: #5b8fc9;
+    /*text-align: right;*/
+}

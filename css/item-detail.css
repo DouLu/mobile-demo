@@ -1,0 +1,242 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:PingFangSC-Light,helvetica,'Heiti SC',sans-serif;
+    background-color: #f4f4f4;
+}
+body{
+    max-width: 500px;
+    margin: auto;
+}
+.fixed-head{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: #ffffff;
+}
+.fixed-head p{
+    float: left;
+    width: calc(100% - 80px);
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+}
+.fixed-head a{
+    display:block;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.index-i{
+    background: url("../img/home-menu.png") no-repeat 15px center;
+    background-size: 20px 20px;
+}
+.search-i{
+    background: url("../img/e-icon.png") no-repeat 5px center;
+    background-size: 20px 20px;
+}
+.fixed-foot{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    bottom:0;
+    left: 0;
+}
+.fixed-foot a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #b4282d;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#wrap{
+    height: 100%;
+}
+.scroll-content{
+    /*position: relative;*/
+    padding-top: 40px;
+    margin-bottom: 50px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.content{
+    /*position: relative;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    height: 100%;*/
+}
+.top-swiper{
+    height: 375px;
+}
+.top-swiper img{
+    width: 100%;
+    height: 375px;
+}
+.m-characteristic,.m-detailBaseInfo{
+    padding: 15px 12px;
+    background-color: #F9F9F9;
+}
+.m-detailBaseInfo h6{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+}
+.item-value{
+    line-height: 50px;
+    font-size: 24px;
+    color: #b4282d;
+}
+.info p{
+    float: left;
+    width: 33.33%;
+    color: #949494;
+    font-size: 12px;
+}
+.info p:nth-child(1){
+    text-align: left;
+}
+.info p:nth-child(2){
+    text-align: center;
+}
+.info p:nth-child(3){
+    text-align: right;
+}
+.m-item{
+    width: 33.333%;
+    float: left;
+}
+.item-left,.item-right,.info-left,.info-right,.p-left,.p-right{
+    float: left;
+}
+.item-left img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.item-right{
+    width: calc(100% - 40px);
+}
+.item-right p{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: -2px;
+}
+.m-detailBaseInfo{
+    background-color: #ffffff;
+}
+.info-left{
+    width: 80%;
+}
+.info-left h6{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+}
+.info-left p,.info-left h6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.item-info{
+    font-size: 14px;
+    color: #7f7f7f;
+    line-height: 30px;
+}
+.item-label{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #f48f18;
+    border: solid 1px #f48f18;
+    margin-top: 15px;
+    background: url("../img/pre11.png") no-repeat right center;
+    background-size: 13px 13px;
+    padding-left: 6px;
+    padding-right: 13px;
+}
+.info-right{
+    width: 20%;
+    border-left: dashed 1px #919191;
+    text-align: center;
+    box-sizing: border-box;
+}
+.info-right a{
+    display: block;
+    height: 104px;
+}
+.info-right p:first-child{
+    font-size: 15px;
+    color: #b4282d;
+    padding-top: 30px;
+}
+.info-right p:last-child{
+    font-size: 13px;
+    color: #b4282d;
+}
+.p-parameters{
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.p-title{
+    font-size: 14px;
+    color: #333333;
+    padding: 15px 0 12px;
+}
+.p-item{
+    border-top:dashed 1px #999999;
+}
+.p-item div{
+    line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+    padding: 6px 0;
+}
+.p-left{
+    width: 25%;
+    color: #999999;
+}
+.p-right{
+    width: 75%;
+    color: #333333;
+}
+.item-photo{
+    margin-top: 10px;
+}
+.item-photo p{
+    height: 100px;
+}
+.item-photo p img{
+    width: 100%;
+    height: 100px;
+}
+.swiper-pagination-bullet{
+    opacity:1;
+    background: #fff;
+}
+.swiper-pagination-bullet-active{
+    opacity: 1;
+    background: #b4282d;
+}
+.scroll-top{
+    position: fixed;
+    z-index: 999;
+    bottom:80px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/1sc-top.png) no-repeat center;
+    background-size: 100%;
+}

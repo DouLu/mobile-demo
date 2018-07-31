@@ -1,0 +1,91 @@
+﻿html{
+	color:#333;
+	background:#FFF;
+}
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif,"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑","STHeiti","MingLiu";
+	font-size: 16px;
+}
+fieldset, img{
+	border:0;
+}
+input,select,textarea,button{
+	outline:none;
+	border: none;
+	font-family:PingFangSC-Light,helvetica,'Heiti SC',sans-serif;
+}
+button{
+	font-family:PingFangSC-Light,helvetica,'Heiti SC',sans-serif;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul,li{
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+i{
+	text-decoration:none;
+	font-style: normal;
+}
+/* 清除浮动*/
+/*方法一：添加新的元素 、应用 clear：both；*/
+.clear{
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0
+}
+/*方法二：父级div定义 overflow: auto（注：父级div 类名加over-flow）*/
+.over-flow{
+	overflow: auto;
+	zoom: 1; /*zoom: 1; 是在处理兼容性问题*/
+}
+/*方法三： 据说是最高大上的方法  :after 方法：（注意：作用于浮动元素的父亲）
+利用:after和:before来在元素内部插入两个元素块
+*/
+.clearfix:after {
+	clear: both;
+	content: ".";/*for FF/chrome/opera/IE8==*/
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;/*为了兼容ie6*/
+}
+html,body{
+	margin: auto;
+}

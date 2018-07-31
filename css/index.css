@@ -1,0 +1,315 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+/*.zhe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,255,0.5);
+}*/
+.fixed-head{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.top-search{
+    width: 100%;
+    padding: 8px 15px;
+    line-height: 30px;
+    background-color: #bfc0c0;
+}
+.top-search a{
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #4c4948;
+    width: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.top-search .icon1{
+    float: left;
+    width: 20px;
+    height: 30px;
+    background: url("../img/down.png") no-repeat center;
+    background-size: 20px 20px;
+}
+.top-search button{
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:url("../img/search.png") no-repeat center #716c6a;
+    background-size: 20px 20px;
+}
+.top-search input{
+    width: calc(100% - 110px);
+    height: 30px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #bcbdbd;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+}
+.top-search input::-webkit-input-placeholder{
+    font-size: 13px;
+    color: #bcbdbd;
+}
+.top-search input::-moz-placeholder{
+    font-size: 13px;
+    color: #bcbdbd;
+}
+.top-search input:-ms-input-placeholder{
+    font-size: 13px;
+    color: #bcbdbd;
+}
+.fixed-foot{
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    /* left: 0; */
+    width: 36px;
+    right:20px;
+    /*height: 30px;*/
+    /* background-color: #d8d8d8; */
+    background-color: rgba(0,0,0,.3);
+}
+.menu-btn{
+    position: relative;
+    float: right;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background:url("../img/wmenu.png") no-repeat center;
+    background-size: 25px 25px;
+}
+.menu-box{
+    display: none;
+    position: absolute;
+    top:-240px;/*自身高度，动态计算加载*/
+    right: 0;
+    /*width: 80px;*/
+    background-color: #4c4948;
+}
+.menu-box li{
+    /*line-height: 60px;*/
+}
+.menu-box li a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    margin: 15px 25px;
+    border-radius: 50%;
+    border: solid 2px rgba(216,216,216,0.5);
+    color: rgba(216,216,216,0.5);
+    text-align: center;
+}
+.menu-box li a:hover,.menu-box li a:active{
+    border: solid 2px #fff;
+    color:#d8d8d8;
+}
+.content{
+    position: relative;
+    /*padding-top: 46px;*/
+    padding-bottom: 30px;
+    height: 100%;
+}
+.scroll-wrap{
+    position: relative;
+    height: 100%;
+}
+.top-menu-box{
+    position: relative;
+    z-index: 99;
+}
+.top-menu:nth-child(1){
+    background-color: #ea171f;
+}
+.top-menu:nth-child(1) .city-collapse-content a:hover,.city-collapse-content a:active{
+    color: #ea171f;
+    background-color: #ced3d6;
+}
+.top-menu:nth-child(2){
+    background-color: #082f67;
+}
+.top-menu:nth-child(2) .city-collapse-content a:hover,.city-collapse-content a:active{
+    color: #082f67;
+    background-color: #ced3d6;
+}
+.top-menu:nth-child(3){
+    background-color: #006a65;
+}
+.top-menu:nth-child(3) .city-collapse-content a:hover,.city-collapse-content a:active{
+    color: #006a65;
+    background-color: #ced3d6;
+}
+.top-menu{
+    line-height: 40px;
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.top-menu.active:before{
+    position: absolute;
+    content:'\25B2';
+    font-size: 18px;
+    line-height: 14px;
+    bottom:0;
+    left: calc(50% - 10px);
+    color: rgba(0,0,0,0.5);
+}
+.top-menu:nth-child(1):before{
+    left: calc(17% - 10px);
+}
+.top-menu:nth-child(3):before{
+    left: calc(83% - 10px);
+}
+.city-collapse{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 40px;
+    /*position: fixed;*/
+    /*top:0;*/
+    /*top:86px;*/
+    width: 100%;
+    max-height: 400px;
+    /*padding-top: 86px;*/
+    /*max-height: 400px;!*iphone6*!*/
+    overflow-y: scroll;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+/*iphone5*/
+@media only screen and (max-device-width :320px){
+    .city-collapse{
+        max-height: 452px;
+    }
+}
+.city-collapse-content{
+    padding-top: 20px;
+}
+.city-collapse-content a{
+    display: block;
+    width: 33.333%;
+    float: left;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.unfolded-btn{
+    width: 100%;
+    height: 30px;
+    background: url("../img/pull-down.png") no-repeat center;
+    background-size: 20px 20px;
+}
+.unfolded-btn.folded{
+    background: url("../img/pull-up.png") no-repeat center;
+    background-size: 20px 20px;
+}
+.top-swiper-box{
+    height: 164px;
+}
+.top-swiper-box .swiper-wrapper a img{
+    height: 160px;
+    width: auto;
+}
+.item-content{
+    position: relative;
+    height: calc(100% - 204px);
+    padding: 5px 10px;
+}
+.item{
+    position: relative;
+    margin-bottom: 5px;
+    display: block;
+}
+.item-title{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px 15px;
+}
+.item img{
+    height: 60px;
+    width: 100%;
+}
+/*弹出层*/
+.pop-up-layer{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+}
+.assess-wrap{
+    position: fixed;
+    height: 190px;
+    width: calc(100% - 64px);
+    top:50%;
+    margin-top: -80px;
+    left: 32px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.assess-content{
+    width: 180px;
+    margin: auto;
+    padding: 34px 0;
+}
+.assess-tip{
+    font-size: 19px;
+    line-height: 30px;
+    color: #4c4948;
+}
+.assess-btns{
+    padding-top: 20px;
+    line-height: 40px;
+}
+.assess-btns a{
+    display: block;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.assess-btns a:first-child{
+    border-right: dashed 1px #000000;
+}
+.no-btn{
+    color: #c2c3c3;
+}
+.yes-btn{
+    color: #5b8fc9;
+}

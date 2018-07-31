@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客服</title>
+    <link type="text/css" rel="stylesheet" href="../lib/bootstrap.min.css">
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/service_chat.css">
+</head>
+<body>
+<div class="wrap clearfix">
+    <div class="iphone-box">
+        <div class="content-box">
+            <div class="chat-box">
+                <div class="chat-content">
+                    <div class="user-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <p>文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息
+                                文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息文本消息</p>
+                        </div>
+                    </div>
+                    <div class="service-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <p>回复文本消息文本消息</p>
+                        </div>
+                    </div>
+                    <div class="user-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <img src="../img/13.png" alt="用户头像">
+                        </div>
+                    </div>
+                    <div class="service-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <img src="../img/13.png" alt="用户头像">
+                        </div>
+                    </div>
+                    <div class="user-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <video src="movie.ogg" controls="controls" autoplay></video>
+                        </div>
+                    </div>
+                    <div class="service-message clearfix">
+                        <img src="../img/13.png" alt="用户头像">
+                        <div class="message-box">
+                            <div class="file-type">
+                                文件名称.file<img src="../img/file.png" alt="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-box">
+                <div class="input-box clearfix">
+                    <input type="text" id="txt" placeholder="咨询问题">
+                    <button id="send_btn">发送</button>
+                    <button id="file_btn"></button>
+                </div>
+                <div class="file-box">
+                    <input type="button" onMouseMove="f.style.pixelLeft=event.x-60;f.style.pixelTop=this.offsetTop;" value="" size="30" onClick="f.click()" class="liulan">
+                    <input type="file" id="f" name="f" style="height:26px;" class="files"  size="1" hidefocus>
+                    <!--<form method="post" action="" enctype="multipart/form-data">
+                        &lt;!&ndash;<input type="text" id="txt" name="txt" class="input" value="文件域" disabled="disabled" />&ndash;&gt;
+                        <input type="button" onMouseMove="f.style.pixelLeft=event.x-60;f.style.pixelTop=this.offsetTop;" value="" size="30" onClick="f.click()" class="liulan">
+                        <input type="file" id="f" onChange="txt.value=this.value" name="f" style="height:26px;" class="files"  size="1" hidefocus>
+                    </form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../lib/jquery-3.2.1.min.js"></script>
+<script>
+$(function () {
+    $('#txt').on('input propertychange change',function () {
+        if($(this).val() === ''){
+            $('#send_btn').hide();
+            $('#file_btn').show();
+        }else {
+            $('#send_btn').show();
+            $('#file_btn').hide();
+            $('.file-box').hide();
+        }
+    });
+    $('#file_btn').on('click',function () {
+        $('.file-box').show();
+    });
+    $('#f').on('input propertychange change',function () {
+        $('#txt').val(this.value);
+        console.log(this.value);
+        if(this.value === ''){
+            $('.file-box').hide();
+        }else {
+            $('#send_btn').show();
+            $('#file_btn').hide();
+            $('.file-box').hide();
+        }
+        event.target.value='';
+    });
+
+    $('#send_btn').on('click',function () {
+       
+        var html = "<div class='service-message clearfix'> " +
+					"<img src='../img/13.png' alt='用户头像'>" +
+					"<div class='message-box'>" +
+					"<p>用户消息</p>" +
+					" </div>" +
+					"</div>";
+				$(".chat-box").append(html);
+		var sh = $('.chat-content').height() + 450;
+        $('.chat-box').scrollTop(sh);
+    });
+});
+</script>
+</body>
+</html>

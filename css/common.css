@@ -1,0 +1,481 @@
+/*会员*/
+.i1{
+	background-image: url(../img/i1_1.png);
+	background-size: 24px;
+
+}
+.i2{
+	background-image: url(../img/i2_1.png);
+	background-size: 22px;
+
+}
+.i3{
+	background-image: url(../img/i3_1.png);
+	background-size: 22px;
+}
+.i4{
+	background-image: url(../img/i4_1.png);
+	background-size: 20px;
+}
+.ui-footer .active div{
+	color: #F49404;
+}
+.active .i1{
+	background-image: url(../img/i1_2.png);
+}
+.active .i2{
+	background-image: url(../img/i2_2.png);
+}
+.active .i3{
+	background-image: url(../img/i3_2.png);
+}
+.active .i4{
+	background-image: url(../img/i4_2.png);
+}
+
+
+.card-c{
+	height: 210px;
+	text-align: center;
+	position: relative;
+}
+.card{
+	width: 230px;
+	height:130px;
+	margin-bottom: -35px;
+}
+.card-num{
+	display: inline-block;
+	width: 200px;
+	margin-bottom: 10px;
+	color: #E2007E;
+}
+
+
+.chose-c{
+	height: 120px;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1;
+    flex-grow:1;
+
+}
+.test-img{
+	width: 80px;
+	text-align: center;
+	font-size: 14px;
+}
+.c-img-c{
+	height: 40px;
+}
+.c-img-c img{
+	width: 35px;
+}
+
+.ui-label{
+	color: #fff;
+	background: #F49404;
+}
+h3{
+	border-left: 3px solid #F49404;
+	padding-left: 5px;
+}
+
+
+
+
+
+/*积分兑换*/
+
+.gift-li{
+	height: 130px;
+}
+.gift-li .ui-list-thumb{
+	width: 100px;
+	height: 100px;
+}
+.gift-li .ui-list-info{
+	padding: 0;
+	height: 100%;
+	position: relative;
+}
+.dh-name{
+	position: absolute;
+	top: 15px;
+	left: 110px;
+	right:5px;
+}
+.dh-num{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.dh-man{
+	position: absolute;
+	bottom: 25px;
+	left: 125px;
+	right: 15px;
+}
+.dh-date{
+	position: absolute;
+	bottom: 10px;
+	left: 125px;
+}
+.dh-oldprice{
+	position: absolute;
+	top: 40px;
+	left: 125px;
+}
+.dh-oldprice span{
+	text-decoration: line-through;
+}
+
+/*我的*/
+.user-top {
+    padding: 12% 0;
+    width: 100%;
+    background-color: #F49404;
+}
+.user-top .avator-box {
+    float:left;
+    margin: 0 0 0 13%;
+    width: 77px;
+    height: 77px;
+    border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.user-top .phone-box {
+    vertical-align: middle;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 16px;
+}
+.user-top .phone-box a {
+    color: #fff;
+}
+.user-top .phone-box .user-name{
+    display: inline-block;
+    width:100%;
+}
+.user-top .user-phoneNum {
+    display: inline-block;
+    line-height: 21px;
+	font-size: 18px;
+}
+.user .ui-border-t{
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+/*优惠券*/
+.yh-c{
+	width: 89%;
+	height: 26.4%;
+	margin: 10px auto 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 5% 5% 0;
+	position: relative;
+}
+
+.yh-c.bg-1{
+	background-image:url(/html_M/img/youhui_bg1.png);
+}
+
+.yh-c.bg-2{
+	background-image:url(/html_M/img/youhui_bg2.png);
+}
+.yh-c.bg-3{
+	background-image:url(/html_M/img/youhui_bg3.png);
+}
+.yh-c.bg-d{
+	background-image:url(/html_M/img/youhui_bgd.png);
+	position: relative;
+}
+.yh-c .bg-e{
+    width: 30%;
+    position: absolute;
+    top: 16%;
+    right: 10%;
+
+}
+
+
+.yh-tit{
+	margin-top:7%;
+	padding-left: 30px;
+	background: url(/html_M/img/youhui_gift.png) no-repeat 0 center;
+	background-size: 20% 100%;
+	font-size: 12px;
+}
+.yh-take{
+	position: absolute;
+	bottom: 33%;
+	width: 90%;
+	text-align: right;
+}
+.yh-xc{
+	position: absolute;
+	bottom: 7%;
+	width: 90%;
+}
+.yh-num{
+	position: absolute;
+	top: 17%;
+	width: 85%;
+	text-align: right;
+	font-size: 24px;
+}
+.yh-num span{
+	font-size: 20px;
+	padding-right: 5px;
+}
+.yh-bianhao{
+	position: absolute;
+	bottom: 34%;
+}
+@media screen and (min-width: 350px){
+	/*.yh-num span{
+		font-size: 36px;
+	}*/
+	.yh-num{
+		width: 80%;
+	}
+	.yh-tit{
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+/*签到页*/
+.sign-head{
+	height: 190px;
+	position: relative;
+	overflow:hidden;
+}
+
+.sign-gz{
+	position: absolute;
+	top:15px;
+	right: 5%;
+	padding-left: 23px;
+	line-height: 20px;
+	background:url(../img/qiandao_gift.png) no-repeat 0 0;
+	background-size: 18px 18px; 
+}
+.sign_page .gz-head{
+	padding: 14px 0;
+	text-align: center;
+
+}
+
+.sign_page .ui-dialog-cnt{
+	overflow: hidden;
+}
+.sign_page .ui-dialog-cnt p{
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+}
+.sign-cd{
+	width: 65%;
+	height: 40px;
+	text-align:center;
+	margin: 80px auto 0;
+	border-radius: 40px;
+	line-height: 40px;
+}
+.sign-cd:active{
+	background-color: #f6e0c0;
+}
+.sign-pz{
+	background: url(../img/sign_i.png) no-repeat 0 center;
+	background-size: 20px;
+	padding-left: 25px;
+}
+.sign-mx,.sign-pz{
+	line-height: 20px;
+}
+.sign-mx{
+	float: left;
+    margin: 15px;
+}
+.sign-mx span{
+   /*float: right;*/
+   display: inline-block;
+   transform: scaleY(1.5) translate(5px,-1px);
+}
+.sign-cd img{
+	width: 22px;
+	position: relative;
+    top: 6px;
+    left: -16px;
+}
+.gz-close{
+	position: relative;
+	right: 15px;
+	top: -12px;
+	font-size: 30px;
+}
+
+
+/*日历*/
+.sign table{width:100%;color: #404040}
+.sign th,.sign td {width:30px;text-align: center;font-weight: normal;}
+.sign .on span{display:inline-block;width:30px;height:30px;line-height: 30px; border:1px solid #4164aa;border-radius: 100%;}
+.sign .today span{display:inline-block;width:30px;height:30px;line-height: 30px; border:1px solid #fff;border-radius: 100%;background-color:#4164aa;color:#fff;}
+.calenbox{padding-bottom: 30px;}
+.calendar_month_next,.calendar_month_prev{display: none;color: #F49404;font-size: 20px;width: 20px;}
+.calendar_month_next {float: left;margin-left: 25%;}
+.calendar_month_span {display: inline;line-height: 30px;font-size: 16px;color: #4164aa;letter-spacing: 2px;}
+.calendar_month_prev{float: right;margin-right: 25%;}
+.sign_succ_calendar_title {text-align: center;padding-bottom: 10px;}
+
+
+
+/*拍照积分*/
+.takepic-c{
+	width: 233px;
+	height: 233px;
+	margin:60px auto 0px;
+	background-color: #F9F9F9; 
+	border:1px solid #EAEAEA;
+	border-radius: 10px;
+	position: relative;
+	overflow:hidden;
+}
+.takepic-c img{
+	margin-top:70px;
+	width: 70px;
+}
+
+
+
+/*意见反馈*/
+.advise-c{
+	background-color: #F9F9F9; 
+	border:1px solid #EAEAEA;
+	resize: none;
+	line-height: 20px; 
+	border-radius: 10px;
+}
+.ui-list li h4{
+	max-height: 50px;
+    overflow: hidden;
+	position: relative;
+}
+.ui-list li h4:after{
+	content:"...";
+    position: absolute;
+    top: 21px;
+    right: 8px;
+    background: #fff;
+    padding: 0 10px;
+}
+.ui-list .fk-huifu h4:after{
+	content:""
+}
+
+/*积分明细*/
+.point-detail-h{
+	height: 140px;
+}
+.point-detail-i{
+	background: url(../img/i3_2.png) no-repeat 0 center;
+	background-size: contain;
+}
+
+
+
+
+/*会员权益*/
+.hy-quanyi td{
+	padding:0 3px;
+}
+.hy-quanyi td:first-child,.firstRow{
+	text-align: center;
+	font-size:14px;
+}
+.hy-quanyi table{margin:0 auto;border-right:1px solid #F4B084;border-bottom:1px solid #F4B084}
+.hy-quanyi table td{border-left:1px solid #F4B084;border-top:1px solid #F4B084}
+.hy-quanyi .font0{color: rgb(246, 169, 53); }
+
+
+/*审核详情页*/
+.shenhe .ui-list-action{
+	padding-left: 35px;
+	background: url(../img/shenhe.png) no-repeat 0 center;
+	background-size: 26px 14px;
+}
+
+/*意见反馈*/
+.feedback .hidee{
+	display: none;
+}
+.feedback .ui-list{
+	margin-bottom: 5px;
+}
+.feedback .ui-label{
+	font-size: 12px;
+	height: 14px;
+	line-height: 14px;
+	padding:4px 10px;
+}
+
+/*审核 小票*/
+.piao .xp_list>div{
+	overflow: hidden;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	position: relative;
+}
+.piao .xp_list img{
+	width: 100%;
+}
+.piao .xp_list .xp_shenhe{
+	width: calc(100% - 26px);
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	bottom: 13px;
+	left: 13px;
+	padding: 5px 10px;
+}
+
+
+/*会员权益*/
+.huiyuan_quanyi{
+	padding-top: 20px;
+	font-size: 14px;
+	
+}
+.huiyuan_quanyi p{
+	color: #757575;
+	padding-left: 30px;
+	line-height: 26px;
+}
+.huiyuan_quanyi h1{
+	font-size: 16px;
+	padding: 20px 0 10px;
+	font-weight: bold;
+	color: #757575;
+
+}
+.huiyuan_quanyi_bg .main{
+	background: #fff url(../img/huiyuan_quanyi_bg.png);
+}

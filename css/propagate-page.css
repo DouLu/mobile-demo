@@ -1,0 +1,111 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+body{
+    /*background-color: #01ddbf;*/
+}
+.wrap{
+height: 100%;
+/*background: url("../img/bzkd-mainbg.png") no-repeat center;
+background-size: 100% 100%;*/
+}
+.content-box{
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.bg{
+    box-sizing: border-box;
+    border:solid 1px transparent;
+    padding: 20px 20px 0;
+    /*background: url("../img/bzkd-mainbg.png") no-repeat center;*/
+    /*background-size: 100% 100%;*/
+}
+.title{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fd631f;
+}
+.profile{
+    padding: 8px;
+    border: 2px #f2e5a9 solid;
+    color: #6e480c;
+    font-size: 12px;
+    /*background: url("../img/border-bg3.png") no-repeat center;*/
+    /*background-size: 100% 100%;*/
+}
+.profile>div>p:first-child{
+    line-height: 20px;
+    color: #6e480c;
+    font-size: 14px;
+    font-weight: 600;
+}
+.profile>div>p:nth-child(n+1){
+    line-height: 18px;
+}
+.p-detail{
+    padding-top: 5px;
+}
+.p-detail pre{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.p-img{
+    padding: 5px 10px;
+}
+.p-img img{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.input-info{
+    padding: 8px;
+    border: 2px #f2e5a9 solid;
+    color: #6e480c;
+    font-size: 14px;
+}
+.input-info>div{
+    padding: 5px;
+    margin-bottom: 5px;
+    border: solid 1px #6e480c;
+    border-radius: 5px;
+}
+.input-info>div p{
+    float: left;
+    width: 100px;
+    color: #6e480c;
+    font-size: 14px;
+    text-align: center;
+}
+.input-info>div input{
+    float: left;
+    width: calc(100% - 120px);
+    font-size: 14px;
+    color: #6e480c;
+    background: none;
+    outline: none;
+}
+input::placeholder{
+    font-size: 14px;
+    color: #6e480c;
+}
+input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #6e480c;
+}
+.s-btn button{
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: 20px auto 30px;
+    background: url("../img/bzkd-btn01.png") no-repeat center;
+    background-size: 100% 100%;
+    color: #fd631f;
+    font-size: 18px;
+}

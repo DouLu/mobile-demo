@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name = "format-detection" content = "telephone=no">
+    <title>银粉平台</title>
+    <link type="text/css" rel="stylesheet" href="css/mui.css">
+    <link type="text/css" rel="stylesheet" href="lib/swiper.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/silver-platform.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="top-swiper">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="img/banner-bg.png" alt="轮播图"></a>
+                <a href="#" class="swiper-slide"><img src="img/banner-bg1.png" alt="轮播图"></a>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--绑定手机号之前-->
+    <div class="clearfix" id="no_bind" style="display: none;">
+        <div class="avatar">
+            <img src="img/a-item.png" alt="头像">
+        </div>
+        <div class="person-info">
+            <div class="person-n clearfix">
+                <div class="p-left">
+                    <p class="nick-name">势均力敌</p>
+                </div>
+                <div class="p-right">
+                    <a href="#" class="points_sign_up">积分签到</a>
+                </div>
+            </div>
+            <div class="person-n clearfix">
+                <div class="p-left">
+                    <a href="#" id="binding_btn">立即绑定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--绑定手机号之后-->
+    <div class="clearfix" id="binded" style="">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="头像"><i></i>
+        </div>
+        <div class="person-info">
+            <div class="person-n clearfix">
+                <div class="p-left">
+                    <p class="nick-name">势均力敌</p>
+                </div>
+                <div class="p-right">
+                    <a href="#" class="points_sign_up">积分签到</a>
+                </div>
+            </div>
+            <div class="person-n clearfix">
+                <div class="p-left">
+                    <p class="person-tel">15020097076</p>
+                </div>
+                <div class="p-right">
+                    <p class="points">4260积分</p>
+                </div>
+            </div>
+            <div class="person-n clearfix" style="padding-top: 2px;">
+                <div class="p-left">
+                    <a href="#" id="no_binding_btn">解绑</a>
+                </div>
+                <div class="p-right">
+                    <a href="#" id="integral_detail">积分明细</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dividing-line"></div>
+    <div class="item-list clearfix">
+        <a href="shopping/card-vouchers.html" class="item">
+            <div class="item-wrap">
+                <img src="img/icon06.png" alt="入口图标">
+                <p>我的卡券</p>
+            </div>
+        </a>
+        <a href="#" class="item r_t_trading" id="r_t_trading">
+            <div class="item-wrap">
+                <img src="img/icon11.png" alt="入口图标">
+                <p>实时交易</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon05.png" alt="入口图标">
+                <p>交易记录查询</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon03.png" alt="入口图标">
+                <p>积分回馈</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon10.png" alt="入口图标">
+                <p>生日特权</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon01.png" alt="入口图标">
+                <p>出行特权</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon02.png" alt="入口图标">
+                <p>兑换折扣</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon07.png" alt="入口图标">
+                <p>客服优先</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon08.png" alt="入口图标">
+                <p>极速理赔</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon09.png" alt="入口图标">
+                <p>历史纪录</p>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="item-wrap">
+                <img src="img/icon04.png" alt="入口图标">
+                <p>敬请期待</p>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="fixed-menu clearfix">
+    <a href="shopping/shopping-index.html" class="menu-item active">首页</a>
+    <a href="shopping/shopping-index.html" class="menu-item">商城</a>
+    <a href="shopping/shopping-index.html" class="menu-item">全球惠</a>
+    <a href="shopping/shopping-index.html" class="menu-item">卡券</a>
+</div>
+<!--解绑手机号提示框-->
+<div class="pop-up-layer" id="unbind_protocol">
+    <div class="assess-wrap">
+        <div class="assess-content">
+            <p class="assess-tip">是否允许解绑当前号码？</p>
+            <p class="assess-btns clearfix">
+                <a href="#" class="no-btn" id="bind_no">不允许</a>
+                <a href="#" class="yes-btn" id="bind_yes">好</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!--实时交易用户协议-->
+<div class="pop-up-layer" id="user_protocol">
+    <div class="assess-wrap">
+        <div class="assess-content">
+            <div class="assess-tip">
+                <h6>实时交易用户协议</h6>
+                <p id="sp">实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议,实时交易用户协议实时交易用户协议,
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议.实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议.
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议
+                    实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议实时交易用户协议
+                </p>
+            </div>
+            <p class="assess-btns clearfix">
+                <a href="#" class="no-btn" id="up_no">锁定</a>
+                <a href="#" class="yes-btn" id="up_yes">解除</a>
+            </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="lib/swiper.min.js"></script>
+<script type="text/javascript" src="lib/mui.min.js"></script>
+<script type="text/javascript" src="js/silver_platform.js"></script>
+</body>
+</html>

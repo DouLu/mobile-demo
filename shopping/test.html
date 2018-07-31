@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>修改个人信息</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/personal.css">
+    <style>
+        .save-i{
+            background: url("../img/3point.png") no-repeat 5px center;
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="fixed-head">
+        <a href="personal.html" class="personal-i">取消</a>
+        <p>个人头像</p>
+        <a href="#" class="save-i"></a>
+    </div>
+    <div class="img-box">
+        <img id="blah" src="../img/avatar.png" alt="avatar" class="img-avatar">
+    </div>
+    <div class="mask-box">
+        <div class="camera-btn">
+            <p>拍照</p>
+            <input type="file" id="imgInp" accept="image/*" capture="camera">
+        </div>
+        <div class="img-file-btn">
+            <p>从手机相册选择</p>
+            <input type="file" id="fileInp" mutiple="mutiple">
+        </div>
+        <div class="save-img">
+            <p>保存图片</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+<script>
+    $(function(){
+        $('.img-avatar').height($(this).width());
+        $('.save-i').on('click',function(){
+            $('.mask-box').show();
+        });
+        $('.mask-box').on('click',function(){
+            $(this).hide();
+        });
+        $('.camera-btn').on('click',function(){
+            event.stopPropagation();
+        });
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+            $('.mask-box').hide();
+        }
+    }
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+    $("#fileInp").change(function(){
+        readURL(this);
+    });
+</script>
+</body>
+</html>

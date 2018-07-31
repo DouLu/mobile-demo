@@ -1,0 +1,309 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:PingFangSC-Light,helvetica,'Heiti SC',sans-serif;
+    background-color: #ececec;
+}
+body{
+    max-width: 500px;
+    margin: auto;
+}
+#wrap{
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.top-swiper{
+    height: 195px;
+    overflow-y: hidden;
+}
+.top-swiper img{
+    width: 100%;
+    height: 195px;
+}
+#no_bind,#binded{
+    /*margin-top: 8px;*/
+    padding: 20px 15px;
+    background-color: #ffffff;
+}
+#no_bind .avatar,#binded .avatar{
+    position: relative;
+    float: left;
+    width: 66px;
+    height:56px;
+    padding-top: 7px;
+}
+.avatar img{
+    width: 56px;
+    height:56px;
+    border-radius: 50%;
+}
+.avatar i{
+    position: absolute;
+    right: 5px;
+    bottom: -9px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon1.png) no-repeat center;
+    background-size: cover;
+}
+.person-info{
+    float: left;
+    width: calc(100% - 66px);
+    padding-right: 10px;
+}
+.p-left{
+    float: left;
+}
+.p-right{
+    float: right;
+}
+.nick-name,.person-tel{
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    display: inline-block;
+}
+.nick-name{
+    padding-right: 16px;
+}
+.nick-name:before{
+    position: absolute;
+    content: '';
+    top:0;
+    right: 0;
+    width: 14px;
+    height: 21px;
+    background: url("../img/next.png") no-repeat center;
+    background-size: 14px 14px;
+    margin-top: 0px;
+}
+.points_sign_up{
+    position: relative;
+    font-size: 12px;
+    color: #4164aa;
+    display: inline-block;
+    padding-left: 19px;
+}
+.points_sign_up:before{
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../img/sign_up.png") no-repeat left center;
+    background-size: cover;
+}
+.points{
+    font-size: 14px;
+    font-weight: bold;
+    color: #bd8e3b;
+}
+#binding_btn,#no_binding_btn,#integral_detail{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+    color: #4164aa;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 6px;
+    border: solid 1px #4164aa;
+}
+#no_bind .person-n:first-child{
+    padding: 12px 0;
+}
+.dividing-line{
+    padding: 19px 15px;
+    background: url("../img/line.png") no-repeat center;
+    background-size: 339px 18px;
+}
+.item-list{
+    /*margin-bottom: 50px;*/
+}
+.item{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 33.333%;
+    float: left;
+    height: 122px;
+    text-align: center;
+    border-bottom: solid 1px #d9d9d9;
+    background-color: #ffffff;
+}
+.item:nth-child(3n+2){
+    border-left: solid 1px #d9d9d9;
+    border-right: solid 1px #d9d9d9;
+}
+.r_t_trading:before{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-top: solid 23px #d0d0d0;
+    border-right: solid 23px #d0d0d0;
+    border-bottom: solid 23px transparent;
+    border-left: solid 23px transparent;
+}
+.item:nth-child(2):after{
+    content: '';
+    position: absolute;
+    top:5px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/icon0.png") no-repeat center;
+    background-size: cover;
+}
+.item-wrap{
+    margin: 31px auto;
+}
+.item-wrap img{
+    width: 34px;
+    height: 34px;
+}
+.item-wrap p{
+    font-size: 14px;
+    color: #333333;
+}
+.fixed-menu{
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    border-top: solid 1px #d9d9d9;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.menu-item{
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+    padding-top: 25px;
+}
+.menu-item:nth-child(1){
+    background: url("../img/home-menu.png") no-repeat center 6px;
+    background-size: 18px 18px;
+}
+.menu-item:nth-child(2){
+    background: url("../img/menu3.png") no-repeat center 6px;
+    background-size: 19px 19px;
+}
+.menu-item:nth-child(3){
+    background: url("../img/menu2.png") no-repeat center 6px;
+    background-size: 22px 22px;
+}
+.menu-item:nth-child(4){
+    background: url("../img/menu1.png") no-repeat center 6px;
+    background-size: 19px 19px;
+}
+.menu-item:nth-child(1).active{
+    background: url("../img/ahome-menu.png") no-repeat center 6px;
+    background-size: 18px 18px;
+    color: #BA404F;
+}
+.menu-item:nth-child(2).active{
+    background: url("../img/amenu3.png") no-repeat center 6px;
+    background-size: 19px 19px;
+    color: #BA404F;
+}
+.menu-item:nth-child(3).active{
+    background: url("../img/amenu2.png") no-repeat center 6px;
+    background-size: 22px 22px;
+    color: #BA404F;
+}
+.menu-item:nth-child(4).active{
+    background: url("../img/amenu1.png") no-repeat center 6px;
+    background-size: 19px 19px;
+    color: #BA404F;
+}
+/*弹出层*/
+.pop-up-layer{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+}
+ #unbind_protocol .assess-wrap{
+    position: fixed;
+    height: 190px;
+    width: calc(100% - 64px);
+    top:50%;
+    margin-top: -80px;
+    left: 32px;
+    background-color: #ffffff;
+    text-align: center;
+}
+#user_protocol .assess-wrap{
+    position: relative;
+    width: calc(100% - 64px);
+    margin: auto;
+    background-color: #ffffff;
+    text-align: center;
+}
+.assess-content{
+    width: 180px;
+    margin: auto;
+    padding: 34px 0;
+}
+#user_protocol .assess-content{
+    width: 260px;
+    padding: 34px 0;
+    margin: 20px auto;
+}
+.assess-tip{
+    height: calc(100% - 80px);
+
+    font-size: 24px;
+    line-height: 30px;
+    color: #4c4948;
+}
+.assess-btns{
+    padding-top: 20px;
+    line-height: 40px;
+}
+.assess-btns a{
+    display: block;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.assess-btns a:first-child{
+    border-right: dashed 1px #000000;
+}
+.no-btn{
+    font-size: 18px;
+    color: #5b8fc9;
+}
+.yes-btn{
+    font-size: 18px;
+    color: #5b8fc9;
+}
+.assess-tip h6{
+    font-size: 24px;
+    font-weight: normal;
+    color: #4c4948;
+}
+.assess-tip p{
+    max-height: 330px;
+    overflow-y: scroll;
+    font-size: 16px;
+    text-align: left;
+    color: #000000;
+    font-family: "方正品尚准黑简体";
+}

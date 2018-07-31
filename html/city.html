@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>城市搜索</title>
+    <link type="text/css" rel="stylesheet" href="../lib/swiper.css">
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/city.css">
+</head>
+<body>
+<div class="fixed-head">
+    <div class="search-box">
+        <a href="#" name="back"></a>
+        <input type="search" name="search" placeholder="城市名、拼音首字母">
+        <button name="search-btn" id="search_btn"></button>
+    </div>
+    <div class="top-menu-box">
+        <ul class="clearfix">
+            <li class="top-menu active" data-identify="domestic">中国</li>
+            <li class="top-menu" data-identify="foreign">境外</li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="content-wrap" id="domestic">
+        <p class="hot-city-title">国内热门城市</p>
+        <div class="clearfix hot-city">
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门澳门澳门澳门</a><a href="#">澳大利亚</a>
+        </div>
+        <div class="city-list" id="city_list"></div>
+        <div class="city-position">
+            <ul></ul>
+            <!--<ul>
+                <li class="a">A</li>
+                <li class="b">B</li>
+                <li class="c">C</li>
+                <li class="d">D</li>
+                <li class="e">E</li>
+                <li class="f">F</li>
+                <li class="g">G</li>
+                <li class="h">H</li>
+                <li class="i">I</li>
+                <li class="j">J</li>
+                <li class="k">K</li>
+                <li class="l">L</li>
+                <li class="m">M</li>
+                <li class="n">N</li>
+                <li class="o">O</li>
+                <li class="p">P</li>
+                <li class="q">Q</li>
+                <li class="r">R</li>
+                <li class="s">S</li>
+                <li class="t">T</li>
+                <li class="u">U</li>
+                <li class="v">V</li>
+                <li class="w">W</li>
+                <li class="x">X</li>
+                <li class="y">Y</li>
+                <li class="z">Z</li>
+            </ul>-->
+        </div>
+    </div>
+    <div class="content-wrap" id="foreign">
+        <p class="hot-city-title">境外热门目的地</p>
+        <div class="clearfix hot-city">
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门</a><a href="#">澳大利亚</a>
+            <a href="#">香港</a><a href="#">澳门澳门澳门澳门</a><a href="#">澳大利亚</a>
+        </div>
+        <div class="city-list" id="foreign_city"></div>
+        <div class="city-position">
+            <ul></ul>
+            <!--<ul>
+                <li class="fa">A</li>
+                <li class="fb">B</li>
+                <li class="fc">C</li>
+                <li class="fd">D</li>
+                <li class="fe">E</li>
+                <li class="ff">F</li>
+                <li class="fg">G</li>
+                <li class="fh">H</li>
+                <li class="fi">I</li>
+                <li class="fj">J</li>
+                <li class="fk">K</li>
+                <li class="fl">L</li>
+                <li class="fm">M</li>
+                <li class="fn">N</li>
+                <li class="fo">O</li>
+                <li class="fp">P</li>
+                <li class="fq">Q</li>
+                <li class="fr">R</li>
+                <li class="fs">S</li>
+                <li class="ft">T</li>
+                <li class="fu">U</li>
+                <li class="fv">V</li>
+                <li class="fw">W</li>
+                <li class="fx">X</li>
+                <li class="fy">Y</li>
+                <li class="fz">Z</li>
+            </ul>-->
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/city.js"></script>
+</body>
+</html>

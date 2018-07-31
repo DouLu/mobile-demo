@@ -1,0 +1,85 @@
+@charset "UTF-8";
+html,body{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: 100%;
+    background-color: #f2f2f7;
+    font-family:PingFangSC-Light,helvetica,'Heiti SC',sans-serif;
+}
+#wrap{
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.content{
+    border: solid 1px transparent;
+    box-sizing: border-box;
+}
+.card-content{
+    margin-top: 15px;
+    padding: 0 10px;
+    border-bottom: solid 1px #d9d9d9;
+}
+.card-item{
+    display: block;
+    height: 110px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-content:nth-child(3n+1) .card-item{
+    background: -moz-linear-gradient(left, #E55D67 0%, #E7537E 100%);
+    background: -webkit-linear-gradient(left, #E55D67 0%,#E7537E 100%);
+    background: -o-linear-gradient(left, #E55D67 0%,#E7537E 100%);
+    background: -ms-linear-gradient(left, #E55D67 0%,#E7537E 100%);
+    background: linear-gradient(to right, #E55D67 0%,#E7537E 100%);
+}
+.card-content:nth-child(3n+2) .card-item{
+    background: -moz-linear-gradient(left, #5284BC 0%, #3F61A8 100%);
+    background: -webkit-linear-gradient(left, #5284BC 0%,#3F61A8 100%);
+    background: -o-linear-gradient(left, #5284BC 0%,#3F61A8 100%);
+    background: -ms-linear-gradient(left, #5284BC 0%,#3F61A8 100%);
+    background: linear-gradient(to right, #5284BC 0%,#3F61A8 100%);
+}
+.card-content:nth-child(3n+3) .card-item{
+    background: -moz-linear-gradient(left, #29B190 0%, #1C9EB3 100%);
+    background: -webkit-linear-gradient(left, #29B190 0%,#1C9EB3 100%);
+    background: -o-linear-gradient(left, #29B190 0%,#1C9EB3 100%);
+    background: -ms-linear-gradient(left, #29B190 0%,#1C9EB3 100%);
+    background: linear-gradient(to right, #29B190 0%,#1C9EB3 100%);
+}
+.card-title img{
+    float: left;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.card-title p{
+    color: #ffffff;
+    line-height: 16px;
+}
+.card-title p:first-child{
+    float: left;
+    font-size: 14px;
+}
+.card-title p:last-child{
+    font-size: 11px;
+}
+.card-num{
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 32px 0;
+}
+.card-num span{
+    padding: 0 10px;
+}
+.card-level{
+    float: right;
+    font-size: 13px;
+    color: #ffffff;
+}

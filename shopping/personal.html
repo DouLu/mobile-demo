@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name = "format-detection" content = "telephone=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/personal.css">
+    <style>
+        #fileInp{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="person-info">
+        <ul>
+            <li>
+                <a href="javascript:void(0);" onClick="fileInp.click()" id="avatar" class="clearfix">
+                    <p class="p-left">头像</p>
+                    <p class="p-right"><img src="../img/avatar.png" alt="avatar" class="avatar"></p>
+                    <input type="file" name="file" id="fileInp" accept="image/*" mutiple="mutiple">
+                </a>
+            </li>
+            <li>
+                <a href="update-personal.html" class="clearfix">
+                    <p class="p-left">名字</p>
+                    <p class="p-right">名字</p>
+                </a>
+            </li>
+            <li>
+                <a href="update-personal.html" class="clearfix">
+                    <p class="p-left">性别</p>
+                    <p class="p-right">性别</p>
+                </a>
+            </li>
+            <li>
+                <a href="update-personal.html" class="clearfix">
+                    <p class="p-left">出生日期</p>
+                    <p class="p-right">2000-10-10</p>
+                </a>
+            </li>
+            <!--<li>
+                <a href="update-personal.html" class="clearfix">
+                    <p class="p-left">手机号码</p>
+                    <p class="p-right">12345678901</p>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+</div>
+<script rel="script" type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

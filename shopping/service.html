@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客服</title>
+    <link type="text/css" rel="stylesheet" href="../lib/bootstrap.min.css">
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/service.css">
+</head>
+<body>
+<div class="wrap clearfix">
+    <div class="left-box">
+        <div class="mobile-box">
+            <div class="ec-box">
+                <div class="content-iframe"><iframe src="card.html" class="iframe-box1"></iframe></div>
+                <nav class="navbar navbar-default">
+                    <div class="">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropup">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">全球特惠</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="card-vouchers.html" class="iframe-url">卡券</a></li>
+                                        <li><a href="card.html" class="iframe-url">银行卡</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropup">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我想知道</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../index.html" class="iframe-url">银粉平台</a></li>
+                                        <li><a href="shopping-index.html" class="iframe-url">商场首页</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropup">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">银粉平台</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="personal.html" class="iframe-url">个人中心</a></li>
+                                        <li><a href="searching.html" class="iframe-url">搜索</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="eg-box">
+            <iframe src="../index.html" class="iframe-box2" id="iBox"></iframe>
+        </div>
+    </div>
+</div>
+<script src="../lib/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        $('.iframe-url').on('click',function () {
+            var src = $(this).attr('href');
+            $('#iBox').attr('src',src);
+            return false;
+        });
+    })
+</script>
+</body>
+</html>

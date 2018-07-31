@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动弹出层页面</title>
+    <link rel="stylesheet" href="../../static/style/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/style/css/bootstrap-select.css">
+    <link href="../../static/style/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../static/style/css/cloudstyle.css" rel="stylesheet">
+    <link href="../../static/style/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../../static/style/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/style/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../static/style/js/bootstrap-select.min.js"></script>
+</head>
+<body class="cs_right_bg1">
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form_box1">
+                <div class="form_box1_head">
+                    <span class="form_box1_title1">添加活动</span>
+                    <span class="form_box1_title1_s1"></span>
+                </div>
+                <div class="form_box2_content">
+                    <form id="businessForm" iframename="" action="" method="post" novalidate="novalidate">
+                        <div class="form_cont_layout2">
+                            <table class="form_cont_table1">
+                                <tbody>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        活动名称
+                                        <span class="font_red1">*</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="NAME" id="NAME" value="" class="form-control form_style1_normal">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        活动图片
+                                        <span class="font_red1">*</span>
+                                    </td>
+                                    <td>
+                                        <input type="file" name="photo" id="photo" value="" class="form-control form_style1_normal">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        国家级
+                                    </td>
+                                    <td>
+                                        <select name="level" id="level1" class="form-control">
+                                            <option value="">国家级</option>
+                                            <option value="1">中国</option>
+                                            <option value="2">中国</option>
+                                            <option value="3">中国</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        省级
+                                    </td>
+                                    <td>
+                                        <select name="level" id="level2" class="form-control selectpicker" data-live-search="true" style="display: none;">
+                                            <option value="">省级</option>
+                                            <option value="1">北京</option>
+                                            <option value="2">上海</option>
+                                            <option value="3">湖北</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        市级
+                                    </td>
+                                    <td>
+                                        <select name="level" id="level3" class="form-control selectpicker" data-live-search="true" style="display: none;">
+                                            <option value="">市级</option>
+                                            <option value="1">北京市</option>
+                                            <option value="2">上海市</option>
+                                            <option value="3">武汉市</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        活动类型
+                                        <span class="font_red1">*</span>
+                                    </td>
+                                    <td>
+                                        <select name="a_class" id="a_class" class="form-control">
+                                            <option value="">活动类型</option>
+                                            <option value="1">衣</option>
+                                            <option value="2">食</option>
+                                            <option value="3">居</option>
+                                            <option value="4">旅</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        是否启用
+                                        <span class="font_red1">*</span>
+                                    </td>
+                                    <td>
+                                        <select name="yes_no" id="yes_no" class="form-control">
+                                            <option value="">是否启用</option>
+                                            <option value="1">是</option>
+                                            <option value="2">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="20%" class="form_cont_table1_td1">
+                                        排序
+                                        <span class="font_red1">*</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="sort" id="sort" value="" class="form-control form_style1_normal">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form_group1">
+                            <div class="col-sm-12 text-center">
+                                <input class="btn btn-primary btn_margin1" type="button" value="保存" id="ok">
+                                <input class="btn btn-white btn_margin1" type="button" value="关闭" id="cancel">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
