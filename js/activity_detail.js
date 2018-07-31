@@ -7,20 +7,26 @@ $(function(){
     });
     $('.cancel-btn').on('click',function(){
         $('.pop-up-layer').hide();
+        $('.activity-loves i').each(function () {
+            $(this).css({"background":"url(../img/loves2.png) no-repeat center","background-size":"cover"});
+        });
         return false;
     });
     $('.assess-loves-btn').on('click',function(){
         $('.pop-up-layer').hide();
+        $('.activity-loves i').each(function () {
+            $(this).css({"background":"url(../img/loves2.png) no-repeat center","background-size":"cover"});
+        });
     });
     /*用户评价爱心效果*/
     $('.activity-loves i').on('click',function(){
         /*爱心数量效果*/
         $(this).prevAll().each(function(){
-            $(this).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+            $(this).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
         });
-        $(this).css({"background":"url(../htmlWeixin/img/loves1.png) no-repeat center","background-size":"cover"});
+        $(this).css({"background":"url(../img/loves1.png) no-repeat center","background-size":"cover"});
         $(this).nextAll().each(function(){
-            $(this).css({"background":"url(../htmlWeixin/img/loves2.png) no-repeat center","background-size":"cover"});
+            $(this).css({"background":"url(../img/loves2.png) no-repeat center","background-size":"cover"});
         });
         $('.activity-loves').attr('data-likes',$(this).prevAll().length+1);
     });
